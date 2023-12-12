@@ -10,7 +10,7 @@ import Foundation
 import Stateful
 import Promis
 
-public protocol NavigationTransitionerDataSource: class {
+public protocol NavigationTransitionerDataSource: AnyObject {
     
     func navigationTransitionerDidRequestInputForReorder(orderId: OrderId) -> Future<ReorderInfo>
     func navigationTransitionerDidRequestUserToLogin() -> Future<Bool>

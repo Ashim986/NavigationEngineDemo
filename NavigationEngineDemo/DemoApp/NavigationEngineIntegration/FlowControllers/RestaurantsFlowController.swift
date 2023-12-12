@@ -9,7 +9,7 @@
 import UIKit
 import Promis
 
-protocol RestaurantsFlowControllerDelegate: class {
+protocol RestaurantsFlowControllerDelegate: AnyObject {
     func restaurantsFlowController(_ flowController: RestaurantsFlowController, didRequestGoingToOrder orderId: OrderId) -> Future<Bool>
 }
 

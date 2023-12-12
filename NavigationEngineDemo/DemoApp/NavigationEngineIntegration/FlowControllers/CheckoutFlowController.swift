@@ -9,7 +9,7 @@
 import UIKit
 import Promis
 
-protocol CheckoutFlowControllerDelegate: class {
+protocol CheckoutFlowControllerDelegate: AnyObject {
     func checkoutFlowControllerDidRequestGoingBackToSERP(_ flowController: CheckoutFlowController) -> Future<Bool>
     func checkoutFlowController(_ flowController: CheckoutFlowController, didRequestGoingToOrder orderId: OrderId) -> Future <Bool>
 }

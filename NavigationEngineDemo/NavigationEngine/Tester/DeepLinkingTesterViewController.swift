@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol DeepLinkingTesterViewControllerDelegate: class {
+public protocol DeepLinkingTesterViewControllerDelegate: AnyObject {
     func deepLinkingTesterViewController(_ deepLinkingTesterViewController: DeepLinkingTesterViewController, didSelect url: URL)
 }
 
